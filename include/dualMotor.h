@@ -6,6 +6,10 @@
 #define JOINT_NUM 2
 #define NONE_JOINT_NUM 4
 
+// 単発関節のサーボID。-1 は「その関節のサーボが実装されていない」。
+// 元コードは 12,13,14,15 の連番決め打ちだった。
+extern const int NONE_JOINT_ID[NONE_JOINT_NUM];
+
 void dualMotorUpdatePos(uint16_t pos[]);
 
 void dualMotorSetup();
